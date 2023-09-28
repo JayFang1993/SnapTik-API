@@ -407,8 +407,7 @@ class Scraper:
                                             timeout=10)
             if response.status_code == 200:
                 data = response.json()
-                print(data)
-                video_data = data['aweme_list'][0]
+                video_data f= data['aweme_list'][0]
                     # print('获取视频信息成功！')
                 return video_data
         except Exception as e:
